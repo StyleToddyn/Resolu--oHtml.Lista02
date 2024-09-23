@@ -9,8 +9,12 @@ calcular.onclick = function(){
     console.log("Media :" + media);
     if(media>=7){
         console.log('Aluno aprovado')
+        let texto = `Aluno aprovado com média ${media}`
+        document.querySelector("#res").innerHTML = texto
     }else{
         console.log("Aluno reprovado")
+        let texto = `Aluno reprovado com média ${media}`
+        document.querySelector("#res").innerHTML = texto
     }
     
    
