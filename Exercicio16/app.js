@@ -30,10 +30,10 @@ botaoVerificar.onclick = function() {
         document.querySelector("#res").innerHTML = `${result1} ; ${result2}`    
     }
     else{
-        console.log(Number.parseInt(homem1.value)+Number.parseInt(mulher2.value))
-        console.log(Number.parseInt(homem2.value)*Number.parseInt(mulher1.value))
-        let result1 = Number.parseInt(homem1.value)+Number.parseInt(mulher2.value)
-        let result2 = Number.parseInt(homem2.value)*Number.parseInt(mulher1.value)
+        console.log(Number.parseInt(homem2.value)+Number.parseInt(mulher1.value))
+        console.log(Number.parseInt(homem1.value)*Number.parseInt(mulher2.value))
+        let result1 = Number.parseInt(homem2.value)+Number.parseInt(mulher1.value)
+        let result2 = Number.parseInt(homem1.value)*Number.parseInt(mulher2.value)
         document.querySelector("#res").innerHTML = `${result1} ; ${result2}`    
     }
     
