@@ -19,6 +19,7 @@ calcular.onclick = function(){
     
    
 }
+calcular.onclick()
 
 
 
