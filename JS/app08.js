@@ -1,10 +1,10 @@
-const v1 = document.querySelector("#valor1").value;
-const v2 = document.querySelector("#valor2").value;
+const v1 = document.querySelector("#valor1");
+const v2 = document.querySelector("#valor2");
 const botaoVerificar = document.querySelector("#verificar");
 
 botaoVerificar.onclick = function() {
 
-    console.log((Number.parseInt(v1)<Number.parseInt(v2))? `${v1},${v2}` : ` ${v2},${v1}`);
-    let texto = (Number.parseInt(v1)<Number.parseInt(v2))? `${v1},${v2}` : ` ${v2},${v1}`;
+    console.log((Number.parseInt(v1.value)<Number.parseInt(v2.value))? `${v1.value},${v2.value}` : ` ${v2.value},${v1.value}`);
+    let texto = (Number.parseInt(v1.value)<Number.parseInt(v2.value))? `${v1.value},${v2.value}` : ` ${v2.value},${v1.value}`;
     document.querySelector("#res").innerHTML = texto;
 }
