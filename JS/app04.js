@@ -1,5 +1,6 @@
 const verificar = document.querySelector("#verificar");
 verificar.onclick = function() {
+    
     const quant  = document.querySelector("#quant");
     console.log(`Quantidade de maças :${quant.value}`);
     if(quant.value<12 ) {
