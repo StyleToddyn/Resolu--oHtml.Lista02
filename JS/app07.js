@@ -1,12 +1,12 @@
 //Recebendo dados via html
-const v1 = document.querySelector("#valor1").value;
-const v2 = document.querySelector("#valor2").value;
+const v1 = document.querySelector("#valor1");
+const v2 = document.querySelector("#valor2");
 const botaoVerificar = document.querySelector("#verificar");
 
 //Criação da função
 botaoVerificar.onclick = function(){
 
-    console.log((Number.parseInt(v1)>Number.parseInt(v2))? `Maior valor é: ${v1}` : `Maior valor é:${v2}`);
-    let texto =(Number.parseInt(v1)>Number.parseInt(v2))? `Maior valor é ${v1}` : `Maior valor é ${v2}`;
+    console.log((Number.parseInt(v1.value)>Number.parseInt(v2.value))? `Maior valor é: ${v1.value}` : `Maior valor é:${v2.value}`);
+    let texto =(Number.parseInt(v1.value)>Number.parseInt(v2.value))? `Maior valor é ${v1.value}` : `Maior valor é ${v2.value}`;
     document.querySelector("#res").innerHTML = texto;
 }
