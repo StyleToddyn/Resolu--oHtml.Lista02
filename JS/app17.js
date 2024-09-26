@@ -5,7 +5,7 @@ let botaoVerificar = document.querySelector("#verificar")
 botaoVerificar.onclick = function (){
     if(codigo.value ==1234){
         console.log(`Código:${codigo.value}`)
-        if(senha.value == 9999){
+         if(senha.value == 9999){
             console.log("Whow")
             let texto = "Tudo certo"
             document.querySelector("#res").innerHTML = texto
