@@ -11,5 +11,4 @@ botaoVerificar.onclick = function () {
     console.log(`Resultado da divisão = ${Number.parseInt(valor1.value) / Number.parseInt(valor2.value)}`)
     let texto = `${valor1.value} / ${valor2.value} = ${Number.parseInt(valor1.value) / Number.parseInt(valor2.value)}`
     document.querySelector("#res").innerHTML = texto
-
 }
